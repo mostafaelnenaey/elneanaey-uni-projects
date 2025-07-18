@@ -1,0 +1,12 @@
+function [Curr] = PVmod(Volt,Irrad,Temp,y,Rs,Rsh)
+% This function calculates the current output given temperature, volt,
+% irradiance
+IL = IrradianceCurrent(Temp,Irrad);
+Is1 = ReverseCurrentSTC(y);
+Is = ReverseCurrent(Is1,Temp,y);
+Curr = zeros(size(Volt));
+length(Volt)
+for i= Volt(0):length(Volt)
+    Curr(i+1) = currentNewton(IL,0,Is,i,Rs,y,Temp,Rsh);
+end
+end
