@@ -1,0 +1,252 @@
+
+*** Running vivado
+    with args -log audio_analyzer.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source audio_analyzer.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun Jun 15 12:38:55 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source audio_analyzer.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/utils_1/imports/synth_1/MCP3202_SPIMaster.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/utils_1/imports/synth_1/MCP3202_SPIMaster.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top audio_analyzer -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26108
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 848.738 ; gain = 471.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'audio_analyzer' [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:52]
+INFO: [Synth 8-3491] module 'MCP3202_SPIMaster' declared at 'C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/MCP3202_SPIMaster.v:5' bound to instance 'spi_inst' of component 'MCP3202_SPIMaster' [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'MCP3202_SPIMaster' [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/MCP3202_SPIMaster.v:13]
+INFO: [Synth 8-256] done synthesizing module 'MCP3202_SPIMaster' (0#1) [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/MCP3202_SPIMaster.v:13]
+INFO: [Synth 8-637] synthesizing blackbox instance 'fft_core_inst' of component 'xfft_v9_1_13' [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'audio_analyzer' (0#1) [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[0] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[32] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[33] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[34] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[35] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[36] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[37] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[38] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[39] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[40] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[41] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[42] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[43] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[44] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[45] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[46] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[47] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[48] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[49] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[50] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[51] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[52] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[53] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[54] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[55] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[56] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[57] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[58] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[59] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[60] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[61] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[62] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element fft_bin_data_reg[63] was removed.  [C:/Users/mosta/Winamp_Project/Winamp_Project.srcs/sources_1/new/audio_analyzer.vhd:162]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 964.156 ; gain = 586.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 964.156 ; gain = 586.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 964.156 ; gain = 586.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 964.156 ; gain = 586.660
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	  31 Input   21 Bit       Adders := 1     
+	   4 Input   16 Bit       Adders := 31    
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 31    
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 62    
+	   2 Input    1 Bit        Muxes := 38    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:34 . Memory (MB): peak = 1149.410 ; gain = 771.914
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:34 . Memory (MB): peak = 1149.410 ; gain = 771.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:35 . Memory (MB): peak = 1155.902 ; gain = 778.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 1342.652 ; gain = 965.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 1342.652 ; gain = 965.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 1342.652 ; gain = 965.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 1342.652 ; gain = 965.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 1342.652 ; gain = 965.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 1342.652 ; gain = 965.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |xfft_v9_1_13  |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |xfft_v9_1_13_bbox |     1|
+|2     |BUFG              |     1|
+|3     |CARRY4            |    40|
+|4     |LUT1              |     4|
+|5     |LUT2              |    18|
+|6     |LUT3              |    28|
+|7     |LUT4              |   184|
+|8     |LUT5              |   172|
+|9     |LUT6              |    10|
+|10    |FDRE              |   395|
+|11    |FDSE              |     2|
+|12    |IBUF              |     3|
+|13    |OBUF              |    56|
++------+------------------+------+
+
+Report Instance Areas: 
++------+-----------+------------------+------+
+|      |Instance   |Module            |Cells |
++------+-----------+------------------+------+
+|1     |top        |                  |   946|
+|2     |  spi_inst |MCP3202_SPIMaster |    67|
++------+-----------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 1342.652 ; gain = 965.156
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 1342.652 ; gain = 965.156
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 1342.652 ; gain = 965.156
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1357.715 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1465.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 5029a3ee
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:42 . Memory (MB): peak = 1465.367 ; gain = 1095.074
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1465.367 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mosta/Winamp_Project/Winamp_Project.runs/synth_1/audio_analyzer.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file audio_analyzer_utilization_synth.rpt -pb audio_analyzer_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 15 12:39:42 2025...
